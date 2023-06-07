@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 2023</title>
+    <link rel="icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div>      
+<header>
+<nav id="navbar">
+    
+            <img src="img/logo-principal.png" class="logo-nav">
+            <ul class="nav-bar">
+                <li class="desplegable"><a href="">Nosotros
+                    <i class="fa-solid fa-chevron-down fa-2xs" style="color: #ffffff;"></i></a>
+                    <ul class="ul-second ul-1">
+                        <li><a href="" class="menu-2">Emisora Taxis Libres</a></li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a href="">Viajeros
+                    <i class="fa-solid fa-chevron-down fa-2xs" style="color: #ffffff;"></i>
+                </a>
+                    <ul class="ul-second ul-2">
+                        <li><a href="" class="menu-2">Descarga la app viajeros</a></li>
+                        <li><a href="" class="menu-2">Taxi por WhatsApp - Nacional</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Empresas</a></li>
+                <li class="desplegable"><a href="">Vinculados
+                    <i class="fa-solid fa-chevron-down fa-2xs" style="color: #ffffff;"></i>
+                </a>
+                    <ul class="ul-second ul-3">
+                        <li><a href="" class="menu-2">Conductores</a></li>
+                        <li><a href="" class="menu-2">Propietarios</a></li>
+                        <li><a href=""class="menu-2"> Beneficios</a></li>
+                        <li><a href=""class="menu-2"> Mi perfil</a></li>
+                        <li><a href=""class="menu-2"> Taxis disponibles</a></li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a href="">Ciudades
+                    <i class="fa-solid fa-chevron-down fa-2xs" style="color: #ffffff;"></i>
+                </a>
+                    <ul class="ul-second ul-4">
+                        <li><a href="" class="menu-2">Bogotá</a></li>
+                        <li><a href=""class="menu-2">Cali</a></li>
+                        <li><a href="" class="menu-2">Bucaramanga</a></li>
+                        <li><a href="" class="menu-2">Medellin</a></li>
+                        <li><a href="" class="menu-2">Cúcuta</a></li>
+                        <li><a href="" class="menu-2">Manizales</a></li>
+                    </ul>
+                </li>
+                <li class="desplegable"><a href="">Más
+                    <i class="fa-solid fa-chevron-down fa-2xs" style="color: #ffffff;"></i>
+                </a>
+                    <ul class="ul-second ul-5">
+                        <li><a href="" class="menu-2">Blog</a></li>
+                        <li><a href="" class="menu-2">Trabajos disponibles</a></li>
+                        <li><a href="" class="menu-2">Sedes Bogotá</a></li>
+                        <li><a href="" class="menu-2">Centro de conocimiento</a></li>
+                        <li><a href="" class="menu-2">Podcast</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+        </nav>
+        <!-- barra de navegacion para celulares -->
+        <div class="container-mobile">
+            <nav id="navbar-mobile" class="nav">
+                
+            <img src="img/logo-principal.png" class="logo-nav">
+            <a href="#menu"  class="nav_menu">
+                <i class="fa-solid fa-bars" style="color: black;"></i>
+            </a>
+            <a href="#" class="nav_menu nav_menu--second">
+                <i class="fa-solid fa-xmark" style="color: black;"></i>
+            </a>
+            
+            <ul class="nav-bar" id="menu">
+                <li class="desplegable desplegable-1"><a href="#menu">Nosotros
+                    </a>
+                    <i class="fa-solid fa-chevron-down fa-lg cambio" class="submenu-click" style="color: #ffffff; display: var(--icon4);"></i>
+                    <i class="fa-solid fa-chevron-up fa-lg cambio2" style="color: #ffffff; display: none; display: var(--icon3);"></i>
+                    <div class="sub-menu">
+                    <ul class="ul-second ul-1" id="ul-1">
+                        <li><a href="#" class="menu-2 m1-sub" id="menu-2">Emisora Taxis Libres</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="desplegable"><a href="#menu">Viajeros
+                </a>
+                <i class="fa-solid fa-chevron-down fa-lg cambio" style="color: #ffffff; top: 100px; display: var(--icon4);"></i>
+                    <i class="fa-solid fa-chevron-up fa-lg cambio2" style="color: #ffffff; top: 100px; display: var(--icon3);"></i>
+                <div class="sub-menu">
+                    <ul class="ul-second ul-2" id="ul-2" >
+                        <li ><a href="" class="menu-2 m2-sub">Descarga la app viajeros</a></li>
+                        <li><a href="" class="menu-2 m2-sub">Taxi por WhatsApp - Nacional</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="">Empresas</a></li>
+                <li class="desplegable"><a href="#menu">Vinculados
+                </a>
+                <i class="fa-solid fa-chevron-down fa-lg cambio" style="color: #ffffff; top: 225px; display: var(--icon4);"></i>
+                    <i class="fa-solid fa-chevron-up fa-lg cambio2" style="color: #ffffff; top: 225px; display: var(--icon3);"></i>
+                <div class="sub-menu">
+                    <ul class="ul-second ul-3" id="ul-3">
+                        <li><a href="" class="menu-2 m3-sub">Conductores</a></li>
+                        <li><a href="" class="menu-2  m3-sub">Propietarios</a></li>
+                        <li><a href=""class="menu-2  m3-sub"> Beneficios</a></li>
+                        <li><a href=""class="menu-2 m3-sub"> Mi perfil</a></li>
+                        <li><a href=""class="menu-2 m3-sub"> Taxis disponibles</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li class="desplegable"><a href="">Ciudades
+                </a>
+                <i class="fa-solid fa-chevron-down fa-lg cambio" style="color: #ffffff; top: 289px; display: var(--icon4);"></i>
+                <i class="fa-solid fa-chevron-up fa-lg cambio2" style="color: #ffffff; top: 289px; display: var(--icon3);" ></i>
+                <div class="sub-menu">
+                <ul class="ul-second ul-4">
+                        <li><a href="" class="menu-2 m4-sub">Bogotá</a></li>
+                        <li><a href=""class="menu-2 m4-sub" >Cali</a></li>
+                        <li><a href="" class="menu-2 m4-sub">Bucaramanga</a></li>
+                        <li><a href="" class="menu-2 m4-sub">Medellin</a></li>
+                        <li><a href="" class="menu-2 m4-sub">Cúcuta</a></li>
+                        <li><a href="" class="menu-2 m4-sub">Manizales</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li class="desplegable"><a href="">Más
+                </a>
+                <i class="fa-solid fa-chevron-down fa-lg cambio" style="color: #ffffff;top:350px; display: var(--icon4);"></i>
+                <i class="fa-solid fa-chevron-up fa-lg cambio2" style="color: #ffffff; top: 350px; display: var(--icon3);"></i>
+                <div class="sub-menu">
+                    <ul class="ul-second ul-5">
+                        <li><a href="" class="menu-2 m5-sub">Blog</a></li>
+                        <li><a href="" class="menu-2 m5-sub">Trabajos disponibles</a></li>
+                        <li><a href="" class="menu-2 m5-sub">Sedes Bogotá</a></li>
+                        <li><a href="" class="menu-2 m5-sub">Centro de conocimiento</a></li>
+                        <li><a href="" class="menu-2 m5-sub">Podcast</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+                
+        </nav>
+        </div>
+    <section class="principal">
+        <div class="texto-header">
+            <h1>HACKATHON</h1>
+            <p>DEL 15 AL 17 DE JUNIO DE 2023</p>
+            <a href="#registro">¡Registrate ya!</a>
+        </div>
+        <div class="sgv-header" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+              <path d="M-1.97,38.00 C149.99,150.00 341.13,-33.03 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: transparent; fill: #fff; stroke-width: 0;"></path>
+            </svg>
+          </div>
+          
+
+    </section>
+    
+    </header>
+    <main>
+        <section class="container-1 contenedor">
+            <img src="img/imagen-1.jpg" alt="">
+            <div class="texto-1">
+                <h2 class="titulo left">¿Qué es la Hackathon Taxis Libres?</h2>
+                <p class="parrafo">Es una maratón de desarrollo donde se reunirán programadores, diseñadores, data scientist's, mercadólogos, economistas, financieros y todos aquellos apasionados por la innovación y la creatividad.</p>
+                <p class="parrafo"><strong>Durante tres días harán un trabajo colaborativo, para construir soluciones a los retos propuestos de movilidad en Colombia</strong> contado con las últimas tecnologías, productos, herramientas y servicios de Taxis Libres y de nuestros patrocinadores y aliados.</p>
+            </div>
+        </section>
+        <section class="part-2">
+            <div class="contenedor container-elemento">
+                <div class="texto-elemento">
+                    <h2 class="titulo right">¿Cuál es el objetivo de la Hackathon de Taxis Libres?</h2>
+                    <p class="parrafo">Buscamos generar espacios creativos <strong> para que los colombianos puedan desarrollar sus ideas y demostrar su talento</strong> resolviendo uno de estos cinco aspectos claves en temas de movilidad, tecnología y sostenibilidad:</p>
+                    <ul>
+                        <li>Transporte aliado para la seguridad en las ciudades.</li>
+                        <li>Soluciones que incrementen las utilidades a los conductores y propietarios.</li>
+                        <li>Soluciones donde los taxis aporten a la optimización de la logística en ciudades inteligentes.</li>
+                        <li>Alternativas para aportar a la conservación del medio ambiente.</li>
+                        <li>Soluciones que mejoren las experiencias para usuarios y conductores por medio de analítica predictiva.</li>
+                    </ul>
+                </div>
+                <img src="img/principal-2.jpg" alt="" class="">
+            </div>
+        </section>
+        <section class="container-info">
+            <div class="info contenedor">
+                <h2 class="titulo left">¿Cuándo se realizará?</h2>
+                <p class="parrafo">Este evento se llevará a cabo en la oficinas principales de cada regional de Taxis Libres del 15 al 17 de junio de 2023</p>
+            </div>
+        </section>
+        <section class="container-premios contenedor">
+            <h2 class="titulo">Beneficios para los equipos ganadores</h2>
+            <div class="card-premios">
+                <article class="card">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <h3>Primer Lugar</h3>
+                    <ul>
+                        <li>$5.000.000 COP.</li>
+                        <li>($10.000 USD IBM Cloud).</li>
+                        <li>Un teléfono Huawei.</li>
+                        <li>50 viajes en taxi ($15.000 COP c/u).</li>
+                        <li>1 año de licencia Platzi.</li>
+                        <li>6 meses de oficinas.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Segundo Lugar</h3>
+                    <ul>
+                        <li>$3.000.000 COP.</li>
+                        <li>Un teléfono Huawei.</li>
+                        <li>20 viajes en taxi ($15.000 COP c/u).</li>
+                        <li>6 meses de licencia para Platzi.</li>
+                        <li>3 meses de oficinas</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <i class="fa-solid fa-medal"></i>
+                    <h3>Tercer Lugar</h3>
+                    <ul>
+                        <li>$2.000.000 COP.</li>
+                        <li>Un teléfono Huawei.</li>
+                        <li>10 viajes en taxi ($15.000 COP c/u).</li>
+                        <li>6 meses de licencia para Platzi.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="galeria">
+                <div class="contenedor">
+                    <h2 class="titulo">Patrocinadores Oficiales</h2>
+                <article class="galeria-cont">
+                    <img src="img/ibm.jpg" alt="">
+                    <img src="img/huawei.jpg" alt="">
+                    <img src="img/uniandes.jpg" alt="">
+                    <img src="img/urosario.jpg" alt="">
+                    <img src="img/secretaria.jpg" alt="">
+                    <img src="img/movilab.jpg" alt="">
+                    <img src="img/credibanco.jpg" alt="">
+                    <img src="img/efecty.jpg" alt="">
+                    <img src="img/platzi.jpg" alt="">
+                </article>
+                </div>
+        </section>
+        <section class="container-1 contenedor">
+            <img src="img/imagen-3.jpg">
+            <div class="texto-1 last-texto">
+                    <h2 class="titulo left">¿Por qué tienes que participar en el evento?</h2>
+                <p class="parrafo">En este espacio se quiere encontrar nuevos talentos y apoyarlos, así como generar nuevos esarrollos que <strong>promuevan la movilidad y el bienestar para conductores y viajeros</strong> en las diferentes ciudades de Colombia.</p>
+                <ul>
+                    <li>Se conformará un jurado con especialistas en los sectores de tecnología, movilidad y sostenibilidad.</li>
+                    <li>Habrá charlas de movilidad, talleres creativos, mentores durante el evento y asesorías personalizadas con expertos.</li>
+                    <li>Evento de gaming (Ice breaker).</li>
+                </ul>
+                <p class="parrafo"><em>“En Taxis Libres queremos desarrollar este evento para impactar en la movilidad y apoyar la reactivación económica del país, apoyando proyectos y personas que quieren materializar sus ideas y demostrar su talento; porque estamos convencidos que abrir las puertas a nuevas ideas puede generar soluciones creativas e innovadoras, afirmó Maritza Hernández CTO en Taxis Libres.” </em></p>
+            </div>
+        </section>
+        
+<section id="registro">
+            <div class="contenedor">
+              <form action="#" method="POST">
+                <h2 class="titulo">Formulario de Inscripción</h2>
+          
+                <label for="tipo_inscripcion">Tipo de Inscripción:</label>
+                <select id="tipo_inscripcion" name="tipo_inscripcion" required>
+                  <option value="">Selecciona el tipo de inscripción</option>
+                  <option value="Individual">Individual</option>
+                  <option value="Grupos">Grupos</option>
+                  <option value="Startup">Startup</option>
+                </select>
+          
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+          
+                <div id="campo_grupo" style="display: none;">
+                  <label for="nombre_grupo">Nombre de su Grupo:</label>
+                  <input type="text" id="nombre_grupo" name="nombre_grupo">
+          
+                  <label for="numero_participantes">Número de Participantes:</label>
+                  <input type="number" id="numero_participantes" name="numero_participantes" min="1" max="5" placeholder="Solo 1 a 5 participantes">
+                </div>
+          
+                <div id="campo_startup" style="display: none;">
+                  <label for="nombre_startup">Nombre de la Startup o Emprendimiento:</label>
+                  <input type="text" id="nombre_startup" name="nombre_startup">
+          
+                  <label for="numero_participantes_startup">Número de Participantes:</label>
+                  <input type="number" id="numero_participantes_startup" name="numero_participantes_startup" min="1" max="5" placeholder="Solo 1 a 5 participantes">
+                </div>
+          
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" name="ciudad" required>
+            <option value="">Selecciona tu ciudad</option>
+            <option value="Cali">Cali</option>
+            <option value="Bogotá">Bogotá</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Medellín">Medellín</option>
+            <option value="Bucaramanga">Bucaramanga</option>
+            <option value="Cúcuta">Cúcuta</option>
+      </select>
+
+        <label for="tipo_documento">Tipo de Documento:</label>
+        <select id="tipo_documento" name="tipo_documento" required>
+            <option value="">Selecciona tu tipo de documento</option>
+            <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+            <option value="Registro Civil de Nacimiento">Registro Civil de Nacimiento</option>
+            <option value="Cédula de Extranjería">Cédula de Extranjería</option>
+            <option value="Tarjeta de Extranjería">Tarjeta de Extranjería</option>
+            <option value="NIT">NIT</option>
+            <option value="Pasaporte">Pasaporte</option>
+      </select>
+
+      <label for="numero_documento">Número de Documento:</label>
+      <input type="text" id="numero_documento" name="numero_documento" required>
+
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+      <label for="fecha_expedicion">Fecha de Expedición del Documento:</label>
+      <input type="date" id="fecha_expedicion" name="fecha_expedicion" required>
+
+      <label for="especializacion">Especialización:</label>
+      <input type="text" id="especializacion" name="especializacion" required>
+
+      <label for="reto">Reto a Realizar:</label>
+      <select id="reto" name="reto" required>
+        <option value="">Selecciona el reto a realizar</option>
+        <option value="Ciudades más Seguras">Ciudades más Seguras</option>
+        <option value="Remuneración a los Conductores">Remuneración a los Conductores</option>
+        <option value="Logística en las Ciudades">Logística en las Ciudades</option>
+        <option value="Calidad de Aire">Calidad de Aire</option>
+        <option value="Analítica Predictiva">Analítica Predictiva</option>
+      </select>
+    <input type="submit" value="Enviar">
+            </form>
+            </div>
+</section>
+    </main>
+    <footer>
+        <div>
+            <img src="img/logo-footer.jpg">
+            <p>Copyright &copy; 2023 Taxis Libres | Desarrollado por Jaydeth Simarra</p>
+        <div>
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9f425fed92.js" crossorigin="anonymous"></script>
+</body>
+</html>
