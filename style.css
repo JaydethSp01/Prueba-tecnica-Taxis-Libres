@@ -13,6 +13,52 @@
 html{
   scroll-behavior: smooth;
 }
+.preloader{
+  background-color: #ffffff;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transition: all 1.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader, .loader::before, .loader::after{
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation: loader 1.5s infinite ease-in-out;
+}
+.loader{
+  color: rgba(151, 170, 4, 0.582);
+  font-size: 13px;
+  position: relative;
+  animation-delay: -0.16s;
+}
+.loader::before, .loader::after{
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.loader::before{
+  left: -3.5em;
+  animation-delay: -0.25s;
+}
+.loader::after{
+  left: 3.5em;
+}
+@keyframes loader{
+  0%,
+  80%,
+  100%{
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40%{
+    box-shadow: 0 2.5em 0 0;
+  }
+
+}
 
 nav {
   position: fixed;
@@ -25,13 +71,12 @@ nav {
 }
  /* CSS adicional */
 nav.scrolled {
-    position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
-    background-color: rgba(0, 0, 0, 0.808);
-    backdrop-filter: blur(200px);
-    mix-blend-mode: normal;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.849);
+    backdrop-filter: blur(100px);
+    isolation: isolate;
 } 
 
 .logo-nav{
@@ -241,6 +286,7 @@ nav.scrolled {
   text-shadow: 0 0 5px #C3DC00;
   font-size: 50px;
   margin-bottom: 5px;
+  padding-bottom: 10px;
 }
 .texto-header p{
   font-size: 25px;
@@ -278,8 +324,9 @@ nav.scrolled {
   padding: 80px 0;
 }
 .titulo{
+  color: #121939;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -312,10 +359,12 @@ nav.scrolled {
   width: 48%;
 }
 .texto-elemento li{
+  color: #121939;
   font-size: 15px;
   padding-bottom: 10px;
 }
 .parrafo{
+  color: #121939;
   font-size: 15px;
   text-align: justify;
   margin-bottom: 20px;
@@ -333,6 +382,7 @@ nav.scrolled {
 
 }
 .card li{
+  color: #121939;
   font-weight: 300;
   padding-bottom: 10px;
   list-style: none;
@@ -386,6 +436,7 @@ nav.scrolled {
   transform: scale(1.1);
 }
 .last-texto li{
+  color: #121939;
   padding-bottom: 15px;
 }
 /* formulario */
@@ -459,12 +510,13 @@ footer i {
   color: #ffffff;
 }
 
-/* responsive celulares */
+/* responsive design */
 @media (max-width: 937px) {
     #navbar{
       display: none; 
     }
     .nav{
+       z-index:9999;
         width: 100%;
         height: 28px;
         display: grid;
@@ -478,6 +530,7 @@ footer i {
         --icon3: none;
         --icon4: block;
     }
+    
     .nav:has(.nav-bar:target){
         --icon1: scale(0);
         --icon2: scale(1); 
@@ -499,6 +552,7 @@ footer i {
         display: block;
         
     }
+
     .logo-nav{
         width: 153px;
         height: 73px;
@@ -524,7 +578,7 @@ footer i {
     }
     .nav-bar{
         position: fixed;
-        background-color: rgba(13, 23, 54, 0.815);
+        background-color: rgba(13, 23, 54, 0.801);
         backdrop-filter: blur(100px);
         mix-blend-mode: difference;
         width: 100%;
@@ -619,6 +673,9 @@ footer i {
     .titulo.left,.titulo.right{
       text-align: center;
     }
+    .titulo-mobile{
+      margin-top: -50px ;
+    }
     .container-1{
       flex-direction: column-reverse;
       justify-content: center;
@@ -666,3 +723,23 @@ footer i {
       display: none;
     }
   }
+
+@media ((min-width: 500px) and (max-width:900px)) {
+  li .m1-sub{
+    padding-left: 140%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  li .m2-sub,li .m3-sub, li .m4-sub {
+    padding-left: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .ul-second li a::after {
+    width: 640px; 
+  }
+  .ul-second li:last-child a::after {
+    top:100%;
+    width: 680px;
+  }
+}

@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon 2023</title>
+    <script src="scrollreveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
     <link rel="icon" href="img/icon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="preloader">
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-      </div>      
+        <div class="loader"></div>
+    </div>      
 <header>
 <nav id="navbar">
     
@@ -182,7 +183,7 @@
         <section class="part-2">
             <div class="contenedor container-elemento">
                 <div class="texto-elemento">
-                    <h2 class="titulo right">¿Cuál es el objetivo de la Hackathon de Taxis Libres?</h2>
+                    <h2 class="titulo right titulo-mobile">¿Cuál es el objetivo de la Hackathon de Taxis Libres?</h2>
                     <p class="parrafo">Buscamos generar espacios creativos <strong> para que los colombianos puedan desarrollar sus ideas y demostrar su talento</strong> resolviendo uno de estos cinco aspectos claves en temas de movilidad, tecnología y sostenibilidad:</p>
                     <ul>
                         <li>Transporte aliado para la seguridad en las ciudades.</li>
@@ -202,7 +203,7 @@
             </div>
         </section>
         <section class="container-premios contenedor">
-            <h2 class="titulo">Beneficios para los equipos ganadores</h2>
+            <h2 class="titulo titulo-scrool">Beneficios para los equipos ganadores</h2>
             <div class="card-premios">
                 <article class="card">
                     <i class="fa-solid fa-ranking-star"></i>
@@ -271,11 +272,11 @@
         
 <section id="registro">
             <div class="contenedor">
-              <form action="#" method="POST">
+              <form action="#" method="POST" id="formulario" class="form">
                 <h2 class="titulo">Formulario de Inscripción</h2>
           
                 <label for="tipo_inscripcion">Tipo de Inscripción:</label>
-                <select id="tipo_inscripcion" name="tipo_inscripcion" required>
+                <select id="tipo_inscripcion" name="tipo_inscripcion">
                   <option value="">Selecciona el tipo de inscripción</option>
                   <option value="Individual">Individual</option>
                   <option value="Grupos">Grupos</option>
@@ -283,7 +284,7 @@
                 </select>
           
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre">
           
                 <div id="campo_grupo" style="display: none;">
                   <label for="nombre_grupo">Nombre de su Grupo:</label>
@@ -302,10 +303,10 @@
                 </div>
           
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" >
 
                 <label for="ciudad">Ciudad:</label>
-        <select id="ciudad" name="ciudad" required>
+        <select id="ciudad" name="ciudad" >
             <option value="">Selecciona tu ciudad</option>
             <option value="Cali">Cali</option>
             <option value="Bogotá">Bogotá</option>
@@ -316,7 +317,7 @@
       </select>
 
         <label for="tipo_documento">Tipo de Documento:</label>
-        <select id="tipo_documento" name="tipo_documento" required>
+        <select id="tipo_documento" name="tipo_documento" >
             <option value="">Selecciona tu tipo de documento</option>
             <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
             <option value="Registro Civil de Nacimiento">Registro Civil de Nacimiento</option>
@@ -327,19 +328,19 @@
       </select>
 
       <label for="numero_documento">Número de Documento:</label>
-      <input type="text" id="numero_documento" name="numero_documento" required>
+      <input type="text" id="numero_documento" name="numero_documento" >
 
       <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" >
 
       <label for="fecha_expedicion">Fecha de Expedición del Documento:</label>
-      <input type="date" id="fecha_expedicion" name="fecha_expedicion" required>
+      <input type="date" id="fecha_expedicion" name="fecha_expedicion" >
 
       <label for="especializacion">Especialización:</label>
-      <input type="text" id="especializacion" name="especializacion" required>
+      <input type="text" id="especializacion" name="especializacion" >
 
       <label for="reto">Reto a Realizar:</label>
-      <select id="reto" name="reto" required>
+      <select id="reto" name="reto" >
         <option value="">Selecciona el reto a realizar</option>
         <option value="Ciudades más Seguras">Ciudades más Seguras</option>
         <option value="Remuneración a los Conductores">Remuneración a los Conductores</option>
