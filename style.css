@@ -621,9 +621,9 @@ footer i {
     }
     li .m1-sub{
       
-      padding-left: 110%;
-      padding-right: 100%;
-      margin-left: -70px;
+      padding-left: 80%;
+      margin-left: auto;
+      margin-right: auto;
     }
     li .m2-sub{
       padding-left: 100%;
@@ -654,10 +654,10 @@ footer i {
       color: #ffffff;
     }
      .ul-second li a::after {
-      width: 400px; 
+      width: 500px; 
     }
     .ul-second li:last-child a::after {
-      width: 390px;
+      width: 490px;
     }
     .texto-header{
       margin-top: 50px;
@@ -726,7 +726,7 @@ footer i {
 
 @media ((min-width: 500px) and (max-width:900px)) {
   li .m1-sub{
-    padding-left: 140%;
+    padding-left: 120%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -736,10 +736,10 @@ footer i {
     margin-left: auto;
   }
   .ul-second li a::after {
-    width: 640px; 
+    width: 750px; 
   }
   .ul-second li:last-child a::after {
     top:100%;
-    width: 680px;
+    width: 800px;
   }
 }
